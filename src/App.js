@@ -3,8 +3,10 @@ import React from "react";
 // import UseEffect from "./component/UseEffect.tsx"
 // import MyComponent from "./component/MyComponent.tsx";
 
-import { ThemeProvider } from "./component/ThemeContext.js";
-import UseContext from "./component/UseContext.tsx";
+// import { ThemeProvider } from "./component/ThemeContext.js";
+// import UseContext from "./component/UseContext.tsx";
+
+import UseRef from "./component/UseRef.tsx";
 
 const App = () => {
   return (
@@ -14,9 +16,11 @@ const App = () => {
       {/* <UseEffect /> */}
       {/* <MyComponent></MyComponent> */}
 
-      <ThemeProvider>
+      {/* <ThemeProvider>
         <UseContext />
-      </ThemeProvider>
+      </ThemeProvider> */}
+
+      <UseRef></UseRef>
     </>
   );
 };
