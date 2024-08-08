@@ -5,10 +5,9 @@ import React from "react";
 
 // import { ThemeProvider } from "./component/ThemeContext.js";
 // import UseContext from "./component/UseContext.tsx";
-
 // import UseRef from "./component/UseRef.tsx";
-
-import UseMemo from "./component/UseMemo.jsx";
+// import UseMemo from "./component/UseMemo.jsx";
+import UseCallback from './component/UseCallback.tsx'
 
 const App = () => {
   return (
@@ -23,7 +22,8 @@ const App = () => {
       </ThemeProvider> */}
 
       {/* <UseRef></UseRef> */}
-      <UseMemo></UseMemo>
+      {/* <UseMemo></UseMemo> */}
+      <UseCallback />
     </>
   );
 };
