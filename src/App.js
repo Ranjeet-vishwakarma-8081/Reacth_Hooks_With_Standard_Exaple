@@ -3,19 +3,20 @@ import React, { createContext, useState } from "react";
 // import UseEffect from "./component/UseEffect.tsx"
 // import MyComponent from "./component/MyComponent.tsx";
 
-import FunctionContextComponent from "./component/useContext/FunctionContextComponent.tsx";
-import ClassContextComponent from "./component/useContext/ClassContextComponent.tsx";
+import FunctionContextComponent from "./component/UseContext.tsx";
+
 export const ThemeContext = createContext();
+
 const App = () => {
-  const [darkTheme, setDarkTheme] = useState(true);
+  const [darkTheme, setDarkTheme] = useState(false);
 
   function toggleTheme() {
-    setDarkTheme((preDarkTheme) => !preDarkTheme);
+    setDarkTheme((prevDarkTheme) => !prevDarkTheme);
   }
 
   return (
     <>
-      {/* <h1>React Hook Example By WebDevSimplified </h1> */}
+      <h1>React Hook Example By WebDevSimplified </h1>
       {/* <UseState /> */}
       {/* <UseEffect /> */}
       {/* <MyComponent></MyComponent> */}
@@ -25,7 +26,6 @@ const App = () => {
           Toggle Theme
         </button>
         <FunctionContextComponent />
-        <ClassContextComponent />
       </ThemeContext.Provider>
     </>
   );
