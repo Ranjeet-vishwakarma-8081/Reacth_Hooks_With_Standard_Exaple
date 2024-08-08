@@ -6,7 +6,9 @@ import React from "react";
 // import { ThemeProvider } from "./component/ThemeContext.js";
 // import UseContext from "./component/UseContext.tsx";
 
-import UseRef from "./component/UseRef.tsx";
+// import UseRef from "./component/UseRef.tsx";
+
+import UseMemo from "./component/UseMemo.jsx";
 
 const App = () => {
   return (
@@ -20,7 +22,8 @@ const App = () => {
         <UseContext />
       </ThemeProvider> */}
 
-      <UseRef></UseRef>
+      {/* <UseRef></UseRef> */}
+      <UseMemo></UseMemo>
     </>
   );
 };
