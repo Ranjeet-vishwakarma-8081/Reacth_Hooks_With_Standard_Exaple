@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# Text Files
+hello.txt
+Kirti
 # testing
 /coverage
 
