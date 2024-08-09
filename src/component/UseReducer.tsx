@@ -1,0 +1,43 @@
+import React, { useReducer } from "react";
+
+const initialValue = {
+  count: 0,
+};
+
+const ACTIONS = {
+  INCREMENT: "Increment",
+  DECREMENT: "Decrement",
+};
+
+function reducer(state: { count: number }, action: { type: any }) {
+  switch (action.type) {
+    case ACTIONS.INCREMENT:
+      return { count: state.count + 1 };
+    case ACTIONS.DECREMENT:
+      return { count: state.count - 1 };
+    default:
+      return state;
+  }
+}
+
+const UseReducer = () => {
+  const [state, dispatch] = useReducer(reducer, initialValue);
+
+  function increment() {
+    dispatch({ type: ACTIONS.INCREMENT });
+  }
+
+  function decrement() {
+    dispatch({ type: ACTIONS.DECREMENT });
+  }
+
+  return (
+    <>
+      <button onClick={decrement}>-</button>
+      <span>{state.count}</span>
+      <button onClick={increment}>+</button>
+    </>
+  );
+};
+
+export default UseReducer;
