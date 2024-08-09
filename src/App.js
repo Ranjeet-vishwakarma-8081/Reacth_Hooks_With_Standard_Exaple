@@ -8,7 +8,8 @@ import React from "react";
 // import UseRef from "./component/UseRef.tsx";
 // import UseMemo from "./component/UseMemo.jsx";
 // import UseCallback from './component/UseCallback.tsx'
-import UseReducer from "./component/UseReducer.tsx"
+// import UseReducer from "./component/UseReducer.tsx"
+import UseTransition from "./component/UseTransition.tsx";
 const App = () => {
   return (
     <>
@@ -24,7 +25,8 @@ const App = () => {
       {/* <UseRef></UseRef> */}
       {/* <UseMemo></UseMemo> */}
       {/* <UseCallback /> */}
-      <UseReducer></UseReducer>
+      {/* <UseReducer></UseReducer> */}
+      <UseTransition />
     </>
   );
 };
