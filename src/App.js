@@ -12,7 +12,8 @@ import React from "react";
 // import UseTransition from "./component/UseTransition.tsx";
 // import UseDeferredValue from "./component/UseDeferredValue.tsx";
 // import UseLayoutEffect from "./component/UseLayoutEffect.tsx";
-import UseDebugValue from "./component/UseDebugValue.tsx";
+// import UseDebugValue from "./component/UseDebugValue.tsx";
+import UseImperativeHandle from "./component/UseImperativeHandle.tsx";
 
 const App = () => {
   return (
@@ -33,7 +34,8 @@ const App = () => {
       {/* <UseTransition /> */}
       {/* <UseDeferredValue /> */}
       {/* <UseLayoutEffect /> */}
-      <UseDebugValue />
+      {/* <UseDebugValue /> */}
+      <UseImperativeHandle />
     </>
   );
 };
