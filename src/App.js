@@ -10,7 +10,9 @@ import React from "react";
 // import UseCallback from './component/UseCallback.tsx'
 // import UseReducer from "./component/UseReducer.tsx"
 // import UseTransition from "./component/UseTransition.tsx";
-import UseDeferredValue from "./component/UseDeferredValue.tsx";
+// import UseDeferredValue from "./component/UseDeferredValue.tsx";
+import UseLayoutEffect from "./component/UseLayoutEffect.tsx";
+
 const App = () => {
   return (
     <>
@@ -28,7 +30,8 @@ const App = () => {
       {/* <UseCallback /> */}
       {/* <UseReducer></UseReducer> */}
       {/* <UseTransition /> */}
-      <UseDeferredValue />
+      {/* <UseDeferredValue /> */}
+      <UseLayoutEffect />
     </>
   );
 };
