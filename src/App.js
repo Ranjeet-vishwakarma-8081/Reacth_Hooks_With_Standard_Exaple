@@ -11,7 +11,8 @@ import React from "react";
 // import UseReducer from "./component/UseReducer.tsx"
 // import UseTransition from "./component/UseTransition.tsx";
 // import UseDeferredValue from "./component/UseDeferredValue.tsx";
-import UseLayoutEffect from "./component/UseLayoutEffect.tsx";
+// import UseLayoutEffect from "./component/UseLayoutEffect.tsx";
+import UseDebugValue from "./component/UseDebugValue.tsx";
 
 const App = () => {
   return (
@@ -31,7 +32,8 @@ const App = () => {
       {/* <UseReducer></UseReducer> */}
       {/* <UseTransition /> */}
       {/* <UseDeferredValue /> */}
-      <UseLayoutEffect />
+      {/* <UseLayoutEffect /> */}
+      <UseDebugValue />
     </>
   );
 };
