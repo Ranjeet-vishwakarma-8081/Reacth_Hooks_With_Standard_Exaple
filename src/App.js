@@ -16,6 +16,10 @@ import React from "react";
 // import UseImperativeHandle from "./component/UseImperativeHandle.tsx";
 // import UseId from "./component/UseId.tsx";
 
+// Custom_Hook
+
+import UseLocalStorage from "./custom_Component/useLocalStorage.tsx";
+
 const App = () => {
   return (
     <>
@@ -38,6 +42,10 @@ const App = () => {
       {/* <UseDebugValue /> */}
       {/* <UseImperativeHandle /> */}
       {/* <UseId /> */}
+
+      {/* Custom Hook */}
+
+      <UseLocalStorage/>
     </>
   );
 };
