@@ -13,7 +13,8 @@ import React from "react";
 // import UseDeferredValue from "./component/UseDeferredValue.tsx";
 // import UseLayoutEffect from "./component/UseLayoutEffect.tsx";
 // import UseDebugValue from "./component/UseDebugValue.tsx";
-import UseImperativeHandle from "./component/UseImperativeHandle.tsx";
+// import UseImperativeHandle from "./component/UseImperativeHandle.tsx";
+// import UseId from "./component/UseId.tsx";
 
 const App = () => {
   return (
@@ -35,7 +36,8 @@ const App = () => {
       {/* <UseDeferredValue /> */}
       {/* <UseLayoutEffect /> */}
       {/* <UseDebugValue /> */}
-      <UseImperativeHandle />
+      {/* <UseImperativeHandle /> */}
+      {/* <UseId /> */}
     </>
   );
 };
