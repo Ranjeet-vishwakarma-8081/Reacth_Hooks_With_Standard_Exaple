@@ -1,17 +1,16 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-export default function CustomInputForUseImperativeHandle({ style, ...props }) {
+ function CustomInputForUseImperativeHandle({ style, ...props },ref) {
   return (
     <>
       <input
-        type="text"
+      ref={ref}
         {...props}
         style={{
           border: "none",
           backgroundColor: "lightpink",
           padding: "0.25rem",
           borderBottom: "0.1rem solid black",
-          borderTopRightRadius: "0.25rem",
           borderTopLeftRadius: "0.25rem",
           ...style,
         }}
@@ -19,3 +18,4 @@ export default function CustomInputForUseImperativeHandle({ style, ...props }) {
     </>
   );
 }
+export default forwardRef(CustomInputForUseImperativeHandle)
