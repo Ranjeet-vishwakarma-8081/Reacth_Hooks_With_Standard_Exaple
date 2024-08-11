@@ -28,6 +28,9 @@ import React from "react";
 
 // import UseLocalStorage from "./component/Custom_Hooks/useLocalStorage.tsx";
 
+// Experimental Hook
+
+import UseEffectEvent from "./component/Experiemental_Hooks/UseEffectEvent.tsx";
 const App = () => {
   return (
     <>
@@ -63,7 +66,9 @@ const App = () => {
 
       {/* <UseLocalStorage/> */}
 
-      
+      {/* Experimental Hook */}
+      <UseEffectEvent />
+
     </>
   );
 };
