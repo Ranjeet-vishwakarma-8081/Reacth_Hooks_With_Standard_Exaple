@@ -1,43 +1,59 @@
 import React from "react";
-// import UseState from "./component/UseState.tsx";
-// import UseEffect from "./component/UseEffect.tsx"
-// import MyComponent from "./component/MyComponent.tsx";
 
-// import { ThemeProvider } from "./component/ThemeContext.js";
-// import UseContext from "./component/UseContext.tsx";
-// import UseRef from "./component/UseRef.tsx";
-// import UseMemo from "./component/UseMemo.jsx";
-// import UseCallback from './component/UseCallback.tsx'
-// import UseReducer from "./component/UseReducer.tsx"
-// import UseTransition from "./component/UseTransition.tsx";
-// import UseDeferredValue from "./component/UseDeferredValue.tsx";
-// import UseLayoutEffect from "./component/UseLayoutEffect.tsx";
-// import UseDebugValue from "./component/UseDebugValue.tsx";
-// import UseImperativeHandle from "./component/UseImperativeHandle.tsx";
-// import UseId from "./component/UseId.tsx";
+// Must Know Hook
+
+// import UseState from "./component/Must_Know_Hooks/UseState.tsx";
+// import UseEffect from "./component/Must_Know_Hooks/UseEffect.tsx"
+// import MyComponent from "./component/Must_Know_Hooks/MyComponent.tsx";
+// import { ThemeProvider } from "./component/Must_Know_Hooks/ThemeContext.js";
+// import UseContext from "./component/Must_Know_Hooks/UseContext.tsx";
+
+// Lessor_Used_Hook
+
+// import UseRef from "./component/Lesser_Used_Hooks/UseRef.tsx";
+// import UseMemo from "./component/Lesser_Used_Hooks/UseMemo.jsx";
+// import UseCallback from './component/Lesser_Used_Hooks/UseCallback.tsx'
+// import UseReducer from "./component/Lesser_Used_Hooks/UseReducer.tsx"
+// import UseTransition from "./component/Lesser_Used_Hooks/UseTransition.tsx";
+// import UseDeferredValue from "./component/Lesser_Used_Hooks/UseDeferredValue.tsx";
+
+// Optional Hooks
+
+// import UseLayoutEffect from "./component/Optional_Hooks/UseLayoutEffect.tsx";
+// import UseDebugValue from "./component/Optional_Hooks/UseDebugValue.tsx";
+// import UseImperativeHandle from "./component/Optional_Hooks/UseImperativeHandle.tsx";
+// import UseId from "./component/Optional_Hooks/UseId.tsx";
 
 // Custom_Hook
 
-import UseLocalStorage from "./custom_Component/useLocalStorage.tsx";
+// import UseLocalStorage from "./component/Custom_Hooks/useLocalStorage.tsx";
 
 const App = () => {
   return (
     <>
       <h1>React Hook Example By WebDevSimplified </h1>
+
+      {/* Must Know Hook */}
+
       {/* <UseState /> */}
       {/* <UseEffect /> */}
-      {/* <MyComponent></MyComponent> */}
+      {/* <MyComponent /> */}
 
       {/* <ThemeProvider>
         <UseContext />
       </ThemeProvider> */}
 
-      {/* <UseRef></UseRef> */}
-      {/* <UseMemo></UseMemo> */}
+      {/* Lessor used Hook */}
+
+      {/* <UseRef /> */}
+      {/* <UseMemo /> */}
       {/* <UseCallback /> */}
-      {/* <UseReducer></UseReducer> */}
+      {/* <UseReducer /> */}
       {/* <UseTransition /> */}
       {/* <UseDeferredValue /> */}
+
+      {/* Optional Hook */}
+
       {/* <UseLayoutEffect /> */}
       {/* <UseDebugValue /> */}
       {/* <UseImperativeHandle /> */}
@@ -45,7 +61,9 @@ const App = () => {
 
       {/* Custom Hook */}
 
-      <UseLocalStorage/>
+      {/* <UseLocalStorage/> */}
+
+      
     </>
   );
 };

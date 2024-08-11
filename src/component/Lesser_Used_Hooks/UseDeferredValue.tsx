@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import List from "./ListForUseDeferredValue.js";
 
 export default function UseDeferredValue() {
-
   const [input, setInput] = useState("");
 
   const handleChange = (e) => {
