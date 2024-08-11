@@ -3,7 +3,7 @@ import React from "react";
 // Must Know Hook
 
 // import UseState from "./component/Must_Know_Hooks/UseState.tsx";
-// import UseEffect from "./component/Must_Know_Hooks/UseEffect.tsx"
+import UseEffect from "./component/Must_Know_Hooks/UseEffect.tsx"
 // import MyComponent from "./component/Must_Know_Hooks/MyComponent.tsx";
 // import { ThemeProvider } from "./component/Must_Know_Hooks/ThemeContext.js";
 // import UseContext from "./component/Must_Know_Hooks/UseContext.tsx";
@@ -30,7 +30,7 @@ import React from "react";
 
 // Experimental Hook
 
-import UseEffectEvent from "./component/Experiemental_Hooks/UseEffectEvent.tsx";
+// import UseEffectEvent from "./component/Experiemental_Hooks/UseEffectEvent.tsx";
 const App = () => {
   return (
     <>
@@ -39,7 +39,7 @@ const App = () => {
       {/* Must Know Hook */}
 
       {/* <UseState /> */}
-      {/* <UseEffect /> */}
+      <UseEffect />
       {/* <MyComponent /> */}
 
       {/* <ThemeProvider>
@@ -67,8 +67,7 @@ const App = () => {
       {/* <UseLocalStorage/> */}
 
       {/* Experimental Hook */}
-      <UseEffectEvent />
-
+      {/* <UseEffectEvent /> */}
     </>
   );
 };

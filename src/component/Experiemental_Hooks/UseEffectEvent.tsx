@@ -14,8 +14,10 @@ export default function UseEffectEvent() {
       setCount((prevCount) => prevCount + 1);
       handleEvent();
     }, 2000);
+
     return () => clearInterval(interval);
   }, [handleEvent]);
+
   // handleEvent is stable and doesn't cause re-renders
   return (
     <>
