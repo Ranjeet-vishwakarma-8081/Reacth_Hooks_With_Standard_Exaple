@@ -1,7 +1,8 @@
-import React, { useState, Suspense } from "react";
-import ErrorBoundary from "./ErrorBoundary.tsx";
-// import DataForUse from "./DataForUse.js";
-const DataForUse = React.lazy(() => import("./DataForUse.js"));
+import React, { Suspense, useState } from "react";
+import DataForUse from "./DataForUse.js";
+
+import ErrorBoundary from "./ErrorBoundary.js";
+// const DataForUse = React.lazy(() => import("./DataForUse.js"));
 
 const URLS = {
   USERS: "https://jsonplaceholder.typicode.com/users",
@@ -12,11 +13,11 @@ const URLS = {
   COMMENTS: "https://jsonplaceholder.typicode.com/comments",
 };
 export default function Use() {
-  const [url, setUrl] = useState(URLS.USERS);
+  const [url, setUrl] = useState(URLS.POSTS);
 
   return (
     <>
-      <ErrorBoundary fallback={<div>Error ...</div>}>
+      <ErrorBoundary fallback={<div>Error Occured!...</div>}>
         <Suspense fallback={<div>Loading...</div>}>
           <DataForUse url={url} shouldFetch />
         </Suspense>
