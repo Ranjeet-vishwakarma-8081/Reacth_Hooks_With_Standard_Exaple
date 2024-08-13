@@ -4,7 +4,7 @@ import CustomUseLocalStorage from "./CustomUseLocalStorage.js";
 export default function useLocalStorage() {
   const [name, setName] = CustomUseLocalStorage("name", "");
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { value: any; }; }) => {
     setName(e.target.value);
   };
   return (
